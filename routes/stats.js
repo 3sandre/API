@@ -27,6 +27,7 @@ const getStats = async (req, res, next) => {
 
 
 // ===========================create=========================
+const statsFilePath = path.join(__dirname, "./stats.json");
 const createStats = async (req, res, next) => {
   try {
     const data = fs.readFileSync(statsFilePath);
